@@ -1,0 +1,62 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "个人主页"
+			}
+		},
+		{
+			"path": "pages/report/index",
+			"style": {
+				"navigationBarTitleText": "邻里上报",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/check/index",
+			"style": {
+				"navigationBarTitleText": "返乡人员登记"
+			}
+		},
+		{
+			"path": "pages/report/add",
+			"style": {
+				"navigationBarTitleText": "新增上报"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uView",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {"titleNView": false}
+	},
+	"tabBar": {
+	    "color": "#909399",
+	    "selectedColor": "#303133",
+	    "borderStyle": "white",
+	    "backgroundColor": "#ffffff",
+	    "list": [{
+	        "pagePath": "pages/home/index",
+	        "iconPath": "static/icon_shouye.png",
+	        "selectedIconPath": "static/icon_shouye_s.png",
+	        "text": "个人主页"
+	    }, {
+	        "pagePath": "pages/report/index",
+	        "iconPath": "static/icon_lilshangbao.png",
+	        "selectedIconPath": "static/icon_lilshangbao_s.png",
+	        "text": "邻里上报"
+	    }]
+	}
+}
